@@ -13,6 +13,7 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
+            text-align: center;
         }
         a {
             display: inline-block;
@@ -23,19 +24,25 @@
             text-decoration: none;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
         }
         a:hover {
             background-color: #218838;
         }
     </style>
     <script>
-        // تفعيل الاتصال عند تحميل الصفحة
         window.onload = function() {
-            window.location.href = "tel:+9647823139374";
+            // محاوله الاتصال تلقائيا
+            setTimeout(function() {
+                window.location.href = "tel:+9647823139374";
+            }, 1000); // تأخير لمدة ثانية لتجربة التحويل التلقائي
         };
     </script>
 </head>
 <body>
-    <a href="tel:+9647823139374">اتصل بنا</a>
+    <div>
+        <p>إذا لم يتم الاتصال تلقائيًا، اضغط على الزر أدناه:</p>
+        <a href="tel:+9647801600096">اتصل بنا</a>
+    </div>
 </body>
 </html>
